@@ -9,6 +9,17 @@ export default function Form(props) {
     return (
         // A form with an id of "pizza-form"
         <form id='pizza-form' onSubmit = {handleSubmit}>
+
+        {/* A name text input field with an id of "name-input" */}
+        <div>
+            <label> Your Name <input
+                id='name-input'
+                name='name-input'
+                value={name}
+                onChange={handleChange} />
+            </label>
+        </div>
+
             <div>
             <label> <h4>Choice of size</h4>
                 <select name = 'size' value ={size} onChange = {handleChange} >
